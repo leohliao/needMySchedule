@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
-import App from './components/app';
+import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded', () => {
   // const preloadedState = localStorgage.state ? JSON.parse(localStorgage.state) : {};
@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore(preloadedState);
   window.store = store;
   const root = document.getElementById('root');
-  ReactDOM.render(<App />, root);
+  ReactDOM.render(<Root />, root);
 });
