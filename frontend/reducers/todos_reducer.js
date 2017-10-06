@@ -1,6 +1,5 @@
 
-defaultState = {
-
+const defaultState = {
 };
 
 const todosReducers = (state = defaultState, action) => {
