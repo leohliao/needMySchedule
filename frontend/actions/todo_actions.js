@@ -22,4 +22,4 @@ export const todoError = error => ({
   error
 })
 
-window.receiveTodo = receiveTodo();
+window.receiveTodo = receiveTodo;
