@@ -3,12 +3,10 @@ import {allTodos} from '../../reducers/selector';
 import {receiveTodos, receiveTodo} from '../../actions/todo_actions';
 
 const mapStateToProps = (state) => ({
-  todos: allTodos(state),
-  state
+  todos: allTodos(state)
 })
 
 const mapDispatchToProps = dispatch => ({
-  receiveTodos: () => dispatch(receiveTodos()),
   receiveTodo: (todo) => dispatch(receiveTodo(todo))
 })
 
