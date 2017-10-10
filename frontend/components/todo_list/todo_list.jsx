@@ -1,6 +1,7 @@
 import React from 'react';
 
-class TodoList extends React.components {
+class TodoList extends React.Component {
+
   render(){
     const {todos} = this.props;
     const ListAllTodos = todos.map((todo, id) => (
