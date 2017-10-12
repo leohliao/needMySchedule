@@ -1,3 +1,5 @@
 export const allTodos = ({ todos }) => {
-  Object.keys(todos).map(id => todos[id]);
-}
+  return (
+    Object.keys(todos).map(id => todos[id]);
+  );
+};
