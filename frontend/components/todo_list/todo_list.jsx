@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoListItem from './todo_list_item';
 
 class TodoList extends React.Component {
 
@@ -6,9 +7,10 @@ class TodoList extends React.Component {
     const { todos } = this.props;
     console.log(this.props);
     const ListAllTodos = todos.map(todo => (
-      <li key={todo.id}>
-        {todo.title}
-      </li>
+        <TodoListItem 
+          key={todo.id}
+          todo={todo}
+          receiveTodo={receiveTodo} />
     ))
     return (
       <div>
